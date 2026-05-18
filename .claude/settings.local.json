@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(echo '{}')",
+      "Bash(npm create *)",
+      "Bash(timeout 5 npm run dev)"
+    ]
+  }
+}

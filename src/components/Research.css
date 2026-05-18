@@ -1,0 +1,170 @@
+.research {
+  background: var(--white);
+}
+
+.research-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.research-card {
+  display: flex;
+  gap: 1.25rem;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(0,201,167,0.15);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.research-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -60%;
+  width: 40%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0,201,167,0.05), transparent);
+  pointer-events: none;
+}
+
+.research-card:hover {
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5), 0 0 30px rgba(0,201,167,0.15);
+  transform: translateY(-3px);
+}
+
+.research-card--teal {
+  border-left: 3px solid #00C9A7;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4), -2px 0 20px rgba(0,201,167,0.15);
+}
+
+.research-card--olive {
+  border-left: 3px solid #F5C518;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4), -2px 0 20px rgba(245,197,24,0.15);
+}
+
+.research-card--teal:hover {
+  border-color: rgba(0,201,167,0.5);
+  background: rgba(0,201,167,0.07);
+}
+
+.research-card--olive:hover {
+  background: rgba(245,197,24,0.05);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5), 0 0 30px rgba(245,197,24,0.12);
+}
+
+.research-card:hover::after {
+  animation: shimmer-line 1s ease forwards;
+}
+
+.rc-left { flex-shrink: 0; }
+
+.rc-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(0,201,167,0.08);
+  border: 1px solid rgba(0,201,167,0.25);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.rc-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rc-top-row { display: flex; align-items: center; gap: 0.6rem; }
+
+.rc-badge {
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.rc-badge--teal {
+  background: rgba(0,201,167,0.12);
+  color: var(--primary);
+  border: 1px solid rgba(0,201,167,0.35);
+}
+
+.rc-badge--olive {
+  background: rgba(245,197,24,0.12);
+  color: #C9A000;
+  border: 1px solid rgba(245,197,24,0.3);
+}
+
+.rc-type { font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+.rc-title { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); line-height: 1.35; }
+
+.rc-venue { font-size: 0.85rem; font-weight: 600; color: var(--primary); }
+.research-card--olive .rc-venue { color: #C9A000; }
+
+.rc-desc { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7; }
+
+.rc-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.25rem; }
+
+.rc-tag {
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.rc-tag--teal { background: rgba(0,201,167,0.1); color: var(--primary); }
+.rc-tag--olive { background: rgba(245,197,24,0.1); color: #C9A000; }
+
+.rc-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.rc-view-btn svg { width: 13px; height: 13px; }
+
+.rc-view-btn--teal {
+  background: rgba(0,201,167,0.1);
+  color: var(--primary);
+  border: 1px solid rgba(0,201,167,0.3);
+}
+.rc-view-btn--teal:hover {
+  background: var(--primary);
+  color: #060E1A;
+  border-color: var(--primary);
+  box-shadow: 0 0 18px rgba(0,201,167,0.5);
+  transform: translateY(-2px);
+}
+
+.rc-view-btn--olive {
+  background: rgba(245,197,24,0.1);
+  color: #C9A000;
+  border: 1px solid rgba(245,197,24,0.3);
+}
+.rc-view-btn--olive:hover {
+  background: #F5C518;
+  color: #060E1A;
+  border-color: #F5C518;
+  box-shadow: 0 0 18px rgba(245,197,24,0.5);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 540px) {
+  .research-card { flex-direction: column; gap: 0.75rem; }
+}
