@@ -13,6 +13,23 @@ export default function Hero({ onResumeClick }) {
         <div className="shape shape-3" />
       </div>
 
+      {/* ── Animated watermark layer ── */}
+      <div className="hero-watermark" aria-hidden="true">
+        <span className="wm-text wm-1">BI DEVELOPER</span>
+        <span className="wm-text wm-2">DATA ANALYTICS</span>
+        <span className="wm-text wm-3">AZURE DATABRICKS</span>
+        <span className="wm-text wm-4">MICROSTRATEGY</span>
+        <span className="wm-icon wm-i1">📊</span>
+        <span className="wm-icon wm-i2">🗄️</span>
+        <span className="wm-icon wm-i3">📈</span>
+        <span className="wm-icon wm-i4">⚡</span>
+        <span className="wm-icon wm-i5">🔢</span>
+        <span className="wm-pill wm-p1">SQL</span>
+        <span className="wm-pill wm-p2">Python</span>
+        <span className="wm-pill wm-p3">Power BI</span>
+        <span className="wm-pill wm-p4">ETL</span>
+      </div>
+
       <div className="hero-inner">
         {/* ── Left column — Photo ── */}
         <div className="hero-right">

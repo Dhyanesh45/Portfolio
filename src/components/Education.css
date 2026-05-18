@@ -32,7 +32,7 @@
 }
 
 .edu-card--undergraduate:hover {
-  box-shadow: var(--shadow-md), 0 0 0 1px rgba(13, 148, 136, 0.1);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(0, 200, 212, 0.1);
   border-color: var(--primary);
 }
 
@@ -62,7 +62,7 @@
 .edu-card--undergraduate .edu-icon {
   background: var(--primary-bg);
   border: 1px solid var(--primary-border);
-  box-shadow: 0 3px 10px rgba(13, 148, 136, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 200, 212, 0.1);
 }
 
 .edu-card--higher-secondary .edu-icon,
@@ -147,12 +147,12 @@
   padding: 0.65rem 1.1rem;
   white-space: nowrap;
   flex-shrink: 0;
-  box-shadow: 0 3px 12px rgba(13, 148, 136, 0.1);
+  box-shadow: 0 3px 12px rgba(0, 200, 212, 0.1);
   transition: all 0.25s;
 }
 
 .edu-card:hover .edu-score-box {
-  box-shadow: 0 6px 18px rgba(13, 148, 136, 0.18);
+  box-shadow: 0 6px 18px rgba(0, 200, 212, 0.18);
   transform: scale(1.03);
 }
 

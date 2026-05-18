@@ -6,12 +6,12 @@
 
 :root {
   /* ── Peacock palette ── */
-  --primary: #00C9A7;
-  --primary-dark: #00A888;
-  --primary-darker: #007A6A;
-  --primary-light: #00F5C8;
-  --primary-bg: rgba(0, 201, 167, 0.1);
-  --primary-border: rgba(0, 201, 167, 0.28);
+  --primary: #007A85;
+  --primary-dark: #006470;
+  --primary-darker: #005A64;
+  --primary-light: #007A85;
+  --primary-bg: rgba(0, 122, 133, 0.1);
+  --primary-border: rgba(0, 122, 133, 0.28);
 
   /* Gold accent (replaces olive) */
   --olive: #F5C518;
@@ -23,31 +23,31 @@
   --purple: #8B5CF6;
 
   /* Light backgrounds */
-  --white: #F4FCF9;
-  --gray-50: #EBF7F2;
-  --gray-100: #D6EEE7;
-  --gray-200: rgba(0, 201, 167, 0.2);
-  --gray-400: rgba(15, 35, 30, 0.35);
-  --gray-600: rgba(15, 35, 30, 0.6);
+  --white: #FFFCF3;
+  --gray-50: #FFF4D0;
+  --gray-100: #F5E6B8;
+  --gray-200: rgba(0, 122, 133, 0.2);
+  --gray-400: rgba(28, 16, 8, 0.3);
+  --gray-600: rgba(28, 16, 8, 0.6);
 
   /* Text (dark on light bg) */
-  --text-primary: #0F1F1C;
-  --text-secondary: #1E3D35;
-  --text-muted: #4A7060;
+  --text-primary: #1C1008;
+  --text-secondary: #3D2810;
+  --text-muted: #6B5030;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0,100,80,0.1);
-  --shadow: 0 4px 16px rgba(0,100,80,0.12);
-  --shadow-md: 0 8px 32px rgba(0,100,80,0.15);
-  --shadow-lg: 0 16px 48px rgba(0,100,80,0.18);
+  --shadow-sm: 0 2px 8px rgba(100,60,0,0.1);
+  --shadow: 0 4px 16px rgba(100,60,0,0.13);
+  --shadow-md: 0 8px 32px rgba(100,60,0,0.16);
+  --shadow-lg: 0 16px 48px rgba(100,60,0,0.2);
 
   /* Glows */
-  --glow-teal: 0 0 25px rgba(0,201,167,0.35), 0 0 60px rgba(0,201,167,0.15);
-  --glow-olive: 0 0 25px rgba(245,197,24,0.35), 0 0 60px rgba(245,197,24,0.15);
+  --glow-teal: 0 0 25px rgba(0,122,133,0.4), 0 0 60px rgba(0,122,133,0.18);
+  --glow-olive: 0 0 25px rgba(245,197,24,0.4), 0 0 60px rgba(245,197,24,0.18);
 
   /* Glass */
-  --glass-bg: rgba(255, 255, 255, 0.75);
-  --glass-border: rgba(0, 201, 167, 0.25);
+  --glass-bg: rgba(255, 251, 236, 0.8);
+  --glass-border: rgba(0, 122, 133, 0.28);
 
   --radius: 14px;
   --radius-lg: 20px;
@@ -74,10 +74,10 @@ img { max-width: 100%; display: block; }
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #040A14; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #00C9A7, #8B5CF6, #F5C518);
+  background: linear-gradient(to bottom, #003D47, #007A85, #40D4DC);
   border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover { background: #00F5C8; }
+::-webkit-scrollbar-thumb:hover { background: #007A85; }
 
 /* ── Global keyframes ── */
 @keyframes reveal-up {
@@ -86,8 +86,8 @@ img { max-width: 100%; display: block; }
 }
 
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 15px rgba(0,201,167,0.3), 0 0 30px rgba(0,201,167,0.1); }
-  50%       { box-shadow: 0 0 30px rgba(0,201,167,0.7), 0 0 60px rgba(0,201,167,0.25); }
+  0%, 100% { box-shadow: 0 0 15px rgba(0,122,133,0.3), 0 0 30px rgba(0,122,133,0.1); }
+  50%       { box-shadow: 0 0 30px rgba(0,122,133,0.7), 0 0 60px rgba(0,122,133,0.25); }
 }
 
 @keyframes gradient-x {

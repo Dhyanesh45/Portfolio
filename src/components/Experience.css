@@ -14,9 +14,9 @@
   top: 16px;
   bottom: 16px;
   width: 2px;
-  background: linear-gradient(to bottom, #00C9A7, #8B5CF6, #F5C518, rgba(0,201,167,0.1));
+  background: linear-gradient(to bottom, #007A85, #8B5CF6, #F5C518, rgba(0,122,133,0.1));
   border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,201,167,0.4);
+  box-shadow: 0 0 10px rgba(0,122,133,0.4);
 }
 
 .timeline-item {
@@ -33,10 +33,10 @@
   top: 1.5rem;
   width: 14px;
   height: 14px;
-  background: linear-gradient(135deg, #00C9A7, #8B5CF6);
+  background: linear-gradient(135deg, #007A85, #8B5CF6);
   border: 3px solid #060E1A;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(0,201,167,0.3), 0 0 15px rgba(0,201,167,0.6);
+  box-shadow: 0 0 0 3px rgba(0,122,133,0.3), 0 0 15px rgba(0,122,133,0.6);
   z-index: 1;
 }
 
@@ -45,7 +45,7 @@
   position: absolute;
   inset: -5px;
   border-radius: 50%;
-  background: rgba(0,201,167,0.2);
+  background: rgba(0,122,133,0.2);
   animation: dot-pulse 2.5s ease-out infinite;
 }
 
@@ -58,7 +58,7 @@
 /* Job card */
 .job-card {
   background: rgba(255,255,255,0.9);
-  border: 1px solid rgba(0,201,167,0.15);
+  border: 1px solid rgba(0,122,133,0.15);
   border-radius: var(--radius-lg);
   padding: 1.85rem;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
@@ -73,11 +73,11 @@
   position: absolute;
   left: 0; top: 0; bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #00C9A7, #8B5CF6);
+  background: linear-gradient(to bottom, #007A85, #8B5CF6);
   border-radius: 0 2px 2px 0;
   opacity: 0;
   transition: opacity 0.3s;
-  box-shadow: 0 0 10px rgba(0,201,167,0.6);
+  box-shadow: 0 0 10px rgba(0,122,133,0.6);
 }
 
 /* Top shimmer */
@@ -86,15 +86,15 @@
   position: absolute;
   top: 0; left: -60%;
   width: 40%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0,201,167,0.04), transparent);
+  background: linear-gradient(90deg, transparent, rgba(0,122,133,0.04), transparent);
   pointer-events: none;
 }
 
 .job-card:hover {
-  border-color: rgba(0,201,167,0.45);
-  box-shadow: 0 8px 40px rgba(0,0,0,0.5), 0 0 30px rgba(0,201,167,0.15);
+  border-color: rgba(0,122,133,0.45);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5), 0 0 30px rgba(0,122,133,0.15);
   transform: translateX(6px);
-  background: rgba(0,201,167,0.07);
+  background: rgba(0,122,133,0.07);
 }
 
 .job-card:hover::before { opacity: 1; }
@@ -145,9 +145,9 @@
 }
 
 .job-type--full {
-  background: rgba(0,201,167,0.12);
+  background: rgba(0,122,133,0.12);
   color: var(--primary);
-  border: 1px solid rgba(0,201,167,0.35);
+  border: 1px solid rgba(0,122,133,0.35);
 }
 
 .job-type--intern {
@@ -193,15 +193,15 @@
   flex-shrink: 0;
   width: 6px;
   height: 6px;
-  background: linear-gradient(135deg, #00C9A7, #8B5CF6);
+  background: linear-gradient(135deg, #007A85, #8B5CF6);
   border-radius: 50%;
   margin-top: 0.58rem;
-  box-shadow: 0 0 6px rgba(0,201,167,0.6);
+  box-shadow: 0 0 6px rgba(0,122,133,0.6);
   transition: transform 0.2s;
 }
 .job-highlights li:hover .bullet {
   transform: scale(1.6);
-  box-shadow: 0 0 10px rgba(0,201,167,0.9);
+  box-shadow: 0 0 10px rgba(0,122,133,0.9);
 }
 
 .job-tags {
@@ -209,12 +209,12 @@
   flex-wrap: wrap;
   gap: 0.45rem;
   padding-top: 1.1rem;
-  border-top: 1px solid rgba(0,201,167,0.1);
+  border-top: 1px solid rgba(0,122,133,0.1);
 }
 
 .job-tag {
-  background: rgba(0,201,167,0.06);
-  border: 1px solid rgba(0,201,167,0.15);
+  background: rgba(0,122,133,0.06);
+  border: 1px solid rgba(0,122,133,0.15);
   color: var(--text-muted);
   padding: 0.28rem 0.7rem;
   border-radius: 8px;
@@ -224,10 +224,10 @@
   cursor: default;
 }
 .job-tag:hover {
-  background: rgba(0,201,167,0.12);
-  border-color: rgba(0,201,167,0.4);
+  background: rgba(0,122,133,0.12);
+  border-color: rgba(0,122,133,0.4);
   color: var(--primary);
-  box-shadow: 0 0 10px rgba(0,201,167,0.25);
+  box-shadow: 0 0 10px rgba(0,122,133,0.25);
 }
 
 @media (max-width: 600px) {
