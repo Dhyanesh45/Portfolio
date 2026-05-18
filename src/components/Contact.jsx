@@ -81,25 +81,25 @@ export default function Contact() {
             <div className="cform-row">
               <div className="cform-field">
                 <label htmlFor="cf-name">Your Name</label>
-                <input id="cf-name" name="name" type="text" placeholder="John Doe"
+                <input id="cf-name" name="name" type="text" placeholder=""
                   value={form.name} onChange={handleChange} required />
               </div>
               <div className="cform-field">
                 <label htmlFor="cf-email">Your Email</label>
-                <input id="cf-email" name="email" type="email" placeholder="john@example.com"
+                <input id="cf-email" name="email" type="email" placeholder=""
                   value={form.email} onChange={handleChange} required />
               </div>
             </div>
             <div className="cform-field">
               <label htmlFor="cf-subject">Subject</label>
               <input id="cf-subject" name="subject" type="text"
-                placeholder="Opportunity / Collaboration / General"
+                placeholder=""
                 value={form.subject} onChange={handleChange} />
             </div>
             <div className="cform-field">
               <label htmlFor="cf-message">Message</label>
               <textarea id="cf-message" name="message"
-                placeholder="Tell me about the opportunity or what you'd like to discuss..."
+                placeholder=""
                 value={form.message} onChange={handleChange} required />
             </div>
             <button type="submit" className="cform-submit">
