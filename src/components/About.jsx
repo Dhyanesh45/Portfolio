@@ -87,7 +87,7 @@ export default function About() {
               </div>
               <div className="ic-row">
                 <span className="ic-label">Education</span>
-                <span className="ic-value">B.Tech ECE (7.7 CGPA)</span>
+                <span className="ic-value">B.E ECE (7.7 CGPA)</span>
               </div>
               <div className="ic-row">
                 <span className="ic-label">Email</span>
