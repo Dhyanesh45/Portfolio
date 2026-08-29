@@ -82,8 +82,8 @@ export default function Hero({ onResumeClick }) {
 
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-number">1+</span>
-              <span className="stat-label">Year Experience</span>
+              <span className="stat-number">2+</span>
+              <span className="stat-label">Years Experience</span>
             </div>
             <div className="stat-divider" />
             <div className="stat">
@@ -92,7 +92,7 @@ export default function Hero({ onResumeClick }) {
             </div>
             <div className="stat-divider" />
             <div className="stat">
-              <span className="stat-number">7</span>
+              <span className="stat-number">8</span>
               <span className="stat-label">Certifications</span>
             </div>
           </div>

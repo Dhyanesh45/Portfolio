@@ -146,7 +146,7 @@
 }
 .rc-view-btn--teal:hover {
   background: var(--primary);
-  color: #060E1A;
+  color: #7FE8E8;
   border-color: var(--primary);
   box-shadow: 0 0 18px rgba(0,122,133,0.5);
   transform: translateY(-2px);

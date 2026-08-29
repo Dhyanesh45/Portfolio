@@ -2,6 +2,15 @@ import './Certifications.css'
 
 const CERTS = [
   {
+    title: 'Databricks Certified Data Engineer Associate',
+    issuer: 'Databricks',
+    date: 'Aug 2026',
+    image: './certificates/DBRX Associate_page-0001.jpg',
+    file: './certificates/databricks-data-engineer-associate.pdf',
+    tags: ['Databricks', 'Data Engineering', 'Azure'],
+    color: 'olive',
+  },
+  {
     title: 'Fundamentals of Azure Databricks',
     issuer: 'Coursera',
     date: 'Mar 2026',
