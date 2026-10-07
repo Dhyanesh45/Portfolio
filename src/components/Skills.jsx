@@ -1,67 +1,41 @@
-import './Skills.css'
+import Cell from './Cell'
 
-const SKILL_GROUPS = [
-  {
-    category: 'Cloud & Big Data',
-    icon: '☁️',
-    color: 'teal',
-    skills: ['Azure Databricks', 'PySpark', 'Delta Lake', 'Azure Data Factory', 'Azure Cloud'],
-  },
-  {
-    category: 'Languages',
-    icon: '💻',
-    color: 'olive',
-    skills: ['Python', 'SQL', 'PySpark', 'DAX'],
-  },
-  {
-    category: 'Python Libraries',
-    icon: '🐍',
-    color: 'teal',
-    skills: ['Pandas', 'NumPy', 'Flask', 'OpenCV', 'Dlib', 'Scikit-learn'],
-  },
-  {
-    category: 'BI & Visualization',
-    icon: '📊',
-    color: 'olive',
-    skills: ['MicroStrategy', 'Power BI', 'KPI Dashboards', 'Analytical Reports'],
-  },
-  {
-    category: 'Data Engineering',
-    icon: '🔧',
-    color: 'teal',
-    skills: ['ETL / ELT', 'Data Modeling', 'Data Governance', 'Data Anonymization', 'SQL Optimization', 'DDL / DML'],
-  },
-  {
-    category: 'Tools & Practices',
-    icon: '⚙️',
-    color: 'olive',
-    skills: ['GIT', 'DevOps / CI-CD', 'GitHub Copilot', 'Regression Testing', 'EDA'],
-  },
+const TOOLS = [
+  { area: 'languages', tools: 'Python, SQL, PySpark' },
+  { area: 'platform', tools: 'Azure Databricks, Delta Lake, Databricks Asset Bundles, Databricks CLI, Azure Data Factory' },
+  { area: 'reporting', tools: 'MicroStrategy, Power BI' },
+  { area: 'databases', tools: 'MySQL, PostgreSQL, Teradata' },
+  { area: 'shipping', tools: 'Git, GitHub, GitLab, Azure DevOps, CI/CD, Docker, Liquibase' },
+  { area: 'governance', tools: 'Data validation, row-level security, PHI controls, anonymization, HIPAA' },
+  { area: 'python_libs', tools: 'Pandas, NumPy, scikit-learn, Flask, OpenCV, Dlib' },
+  { area: 'ai_tools', tools: 'GitHub Copilot, Claude, OpenAI API' },
 ]
 
 export default function Skills() {
   return (
-    <section id="skills" className="skills section alt-bg">
-      <div className="container">
-        <div className="section-label">Technical Skills</div>
-        <h2 className="section-title">What I Work With</h2>
-
-        <div className="skills-grid">
-          {SKILL_GROUPS.map((group) => (
-            <div key={group.category} className={`skill-card skill-card--${group.color}`}>
-              <div className="skill-card-header">
-                <span className="skill-icon">{group.icon}</span>
-                <h3 className="skill-category">{group.category}</h3>
-              </div>
-              <div className="skill-tags">
-                {group.skills.map(skill => (
-                  <span key={skill} className="skill-tag">{skill}</span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+    <Cell
+      n={6}
+      id="tools"
+      lang="sql"
+      duration={0.21}
+      code={`SELECT area, tools\nFROM   dhyanesh.toolbox;`}
+    >
+      <h2 className="visually-hidden">Tools I use</h2>
+      <div className="result-wrap">
+        <table className="result">
+          <thead><tr><th></th><th>area</th><th>tools</th></tr></thead>
+          <tbody>
+            {TOOLS.map((t, i) => (
+              <tr key={t.area}>
+                <td className="rownum">{i + 1}</td>
+                <td className="mono">{t.area}</td>
+                <td>{t.tools}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-    </section>
+      <p className="result-meta">{TOOLS.length} rows</p>
+    </Cell>
   )
 }

@@ -1,0 +1,99 @@
+.cell {
+  display: grid;
+  grid-template-columns: var(--gutter-w) minmax(0, 1fr);
+  column-gap: 28px;
+  padding: 56px 0;
+  border-top: 1px solid var(--rule);
+}
+.cell:first-of-type { border-top: 0; }
+
+.cell-gutter {
+  position: sticky;
+  top: calc(var(--bar-h) + 20px);
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 2px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--ink-3);
+}
+.cell-cmd {
+  color: var(--ink-2);
+  font-weight: 500;
+}
+.cell-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 17px;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.2s;
+}
+.cell-status svg { width: 13px; height: 13px; color: var(--ok); }
+.cell[data-state='running'] .cell-status { color: var(--blue); }
+
+.spinner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--blue) 25%, transparent);
+  border-top-color: var(--blue);
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Code input strip ── */
+.cell-input {
+  position: relative;
+  margin-bottom: 24px;
+  background: var(--code-bg);
+  border-radius: 6px;
+  transition: box-shadow 0.3s var(--ease-out);
+}
+.cell[data-state='running'] .cell-input {
+  box-shadow: inset 2px 0 0 var(--blue);
+}
+.cell-input pre {
+  margin: 0;
+  padding: 14px 72px 14px 16px;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--ink);
+  tab-size: 2;
+}
+.cell-lang {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--ink-3);
+}
+
+.syn-kw { color: var(--syn-kw); font-weight: 600; }
+.syn-str { color: var(--syn-str); }
+.syn-num { color: var(--syn-num); }
+.syn-fn { color: var(--syn-fn); }
+.syn-com { color: var(--syn-com); font-style: italic; }
+
+.cell-output { min-width: 0; }
+
+@media (max-width: 760px) {
+  .cell {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 40px 0;
+  }
+  .cell-gutter {
+    position: static;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .cell-input pre { font-size: 0.8125rem; padding-right: 16px; }
+  .cell-lang { display: none; }
+}
