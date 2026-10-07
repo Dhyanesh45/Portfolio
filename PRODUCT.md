@@ -31,7 +31,6 @@ Deployed to GitHub Pages under `/Portfolio/` (Vite + React, `npm run deploy`). V
 ## Brand Commitments
 
 - The user rejected generic AI-sounding copy ("Professional Journey", "turning raw pipelines into decisions that power the future") and pages where every section is the same card. Copy must be specific and personal.
-- The user chose a direction drawn from the tools Dhyanesh uses every day: Databricks-style notebooks, SQL and pipeline lineage.
 
 ## Evidence on Hand
 
