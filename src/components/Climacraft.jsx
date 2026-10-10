@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Climacraft.css'
+import Lakehouse from './Lakehouse'
 
 const HIGHLIGHTS = [
   'Built a climate-tech product from inception, owning product storytelling, positioning, and early GTM communication.',
@@ -15,8 +16,10 @@ export default function Climacraft() {
   return (
     <section id="climacraft" className="climacraft section">
       <div className="container">
-        <div className="section-label">Featured Project</div>
+        <div className="section-label">Featured Projects</div>
         <h2 className="section-title">Projects & <span>Ventures</span></h2>
+
+        <Lakehouse />
 
         <div className="cc-card">
           {/* Tags */}
