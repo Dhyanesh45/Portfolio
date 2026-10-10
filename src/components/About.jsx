@@ -12,7 +12,7 @@ export default function About() {
             <p>
               I hold a <strong>Bachelor of Engineering in Electronics and Communication Engineering</strong> from
               Madras Institute of Technology, Anna University. Currently working as a
-              <strong> BI Developer at Neurealm</strong> (formerly GAVS Technologies), I specialize
+              <strong> Data Engineer at Neurealm</strong> (formerly GAVS Technologies), I specialize
               in business intelligence and data analytics for US-based healthcare clients.
             </p>
             <p>
@@ -79,7 +79,7 @@ export default function About() {
               </div>
               <div className="ic-row">
                 <span className="ic-label">Role</span>
-                <span className="ic-value">BI Developer</span>
+                <span className="ic-value">Data Engineer</span>
               </div>
               <div className="ic-row">
                 <span className="ic-label">Experience</span>

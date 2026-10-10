@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
 
         <p className="footer-tagline">
-          BI Developer · Data Analytics · AI Enthusiast
+          Data Engineer · Data Analytics · AI Enthusiast
         </p>
 
         <div className="footer-divider" />

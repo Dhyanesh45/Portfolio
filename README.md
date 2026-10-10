@@ -1,6 +1,6 @@
 # S J Dhyanesh | Portfolio
 
-Personal portfolio website for S J Dhyanesh — BI Developer & Data Analytics Professional. Built with React and Vite, deployed to GitHub Pages.
+Personal portfolio website for S J Dhyanesh — Data Engineer & Data Analytics Professional. Built with React and Vite, deployed to GitHub Pages.
 
 ## Sections
 

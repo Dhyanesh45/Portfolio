@@ -15,7 +15,7 @@ export default function Hero({ onResumeClick }) {
 
       {/* ── Animated watermark layer ── */}
       <div className="hero-watermark" aria-hidden="true">
-        <span className="wm-text wm-1">BI DEVELOPER</span>
+        <span className="wm-text wm-1">DATA ENGINEER</span>
         <span className="wm-text wm-2">DATA ANALYTICS</span>
         <span className="wm-text wm-3">AZURE DATABRICKS</span>
         <span className="wm-text wm-4">MICROSTRATEGY</span>
@@ -62,7 +62,7 @@ export default function Hero({ onResumeClick }) {
           </h1>
 
           <p className="hero-title">
-            BI Developer
+            Data Engineer
             <span className="title-divider">·</span>
             Data Analytics Professional
           </p>

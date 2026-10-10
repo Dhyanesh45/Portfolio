@@ -31,7 +31,7 @@ export default function ResumePopup({ open, onClose }) {
         </div>
 
         <h2 className="rp-title">My Resume</h2>
-        <p className="rp-sub">S J Dhyanesh &mdash; BI Developer</p>
+        <p className="rp-sub">S J Dhyanesh &mdash; Data Engineer</p>
         <p className="rp-desc">
           Download or view my full resume covering my experience at Neurealm, skills,
           education, certifications, and research.
